@@ -5,8 +5,15 @@ guess = gissningen.
 skapa en funktion med parametrar: word och guess
 jämför guess[x] mot word[x]
     om x == x skriv ut correct
-    om word.includes(guess[x] && != x==x) skriv ut misplaced
-    om !word.includes(x) skriv ut incorrect
+
+
+    om word.includes(guess[x]) = true,
+        => guess[x] === guess[word.indexOf(guess[x])] om true => incorrect
+    annars => skriv ut misplaced
+
+
+
+    annars =>  skriv ut incorrect
 
 ittirera loopen per gissning.
 
