@@ -1,6 +1,17 @@
 {
-  "dependencies": {
-    "jest": "^29.7.0",
-    "nodemon": "^3.1.0"
-  }
+  "scripts": {
+    "test": "jest"
+  },
+  "name": "a7_upg1_wordle",
+  "description": "2 strängar, word + guess.",
+  "version": "1.0.0",
+  "main": "wordle.js",
+  "directories": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "author": "",
+  "license": "ISC"
 }
