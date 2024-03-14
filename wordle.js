@@ -21,6 +21,5 @@ function wordle(word, guess){
     return correct;
 };
 
-wordle('cykla', 'hallå').map((obj) => console.log(obj));
 
 module.exports = wordle;
