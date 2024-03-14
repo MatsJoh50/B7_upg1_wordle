@@ -1,17 +1,24 @@
 const wordle = require('../wordle.js');
 
-test('Word: cow, Guess: wow', () => {
+test('Test to see if all is correct: Word: hej, Guess, hej', () => {
 
-//Set values for function.
+    const result = wordle('hej', 'hej')
+
+    expect(result[0]).toEqual('h - correct');
+    expect(result[1]).toEqual('e - correct');
+    expect(result[2]).toEqual('j - correct');
+})
+
+test('Simple test for Correct/Incorrect: Word: cow, Guess: wow', () => {
+
 const result = wordle('cow', 'wow');
 
-//Control the returning objects
-    expect(result[0]).toEqual('w - incorrect'); //
+    expect(result[0]).toEqual('w - incorrect');
     expect(result[1]).toEqual('o - correct');
     expect(result[2]).toEqual('w - correct');
 });
 
-test('Word: cykla, Guess: hallå', () => {
+test('More advanced to see if "a" and "l" get correct status: Word: cykla, Guess: hallå', () => {
 
     const result = wordle('cykla', 'hallå');
 
@@ -23,11 +30,3 @@ test('Word: cykla, Guess: hallå', () => {
 })
 
 
-test('Word: hej, Guess, hej', () => {
-
-    const result = wordle('hej', 'hej')
-
-    expect(result[0]).toEqual('h - correct');
-    expect(result[1]).toEqual('e - correct');
-    expect(result[2]).toEqual('j - correct');
-})
