@@ -1,25 +1,24 @@
 function wordle(word, guess){
-    
+    const rightWord = word.toLowerCase().split('');
+    const guessingWord = guess.toLowerCase().split('');    
     const correct = []
 
-    for(let i = 0; i < word.length; i++){
-        let letter = guess.charAt(i);
-        if(word[i] === letter){
-            correct.push(letter + " - correct");
-        } else if(word.includes(letter)){
-            if(letter === guess[word.indexOf(letter)]){
-                correct.push(letter + " - incorrect");
-            } else {
-                correct.push(letter + " - misplaced");
-            }
+    for(let i = 0; i < rightWord.length; i++){
+        if(rightWord[i] === guessingWord[i]){
+            correct[i] = `${guessingWord[i]} - Correct`
+            rightWord[i] = null
         } else {
-            correct.push(letter + " - incorrect");
-            
+            correct[i] = `${guessingWord[i]} - Incorrect`
         }
     }
-    // return correct.map((obj) => console.log(obj));
+
+
+    for(let i = 0; i < rightWord.length; i++){
+        if(correct[i].includes('Incorrect') && rightWord.includes(guessingWord[i])){
+            correct[i] = correct[i].charAt(0) + ' - Misplaced'
+            rightWord[rightWord.indexOf(guessingWord[i])] = null;
+        }
+    }
     return correct;
-};
-
-
+}
 module.exports = wordle;

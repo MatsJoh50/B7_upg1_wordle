@@ -1,21 +1,13 @@
-2 strängar, word + guess.
-word = svaret.
-guess = gissningen.
+Ta in två ord, ett "svar" en "gissning"
 
-skapa en funktion med parametrar: word och guess
-jämför guess[x] mot word[x]
-    om x == x skriv ut correct
+spara orden i varsin array, bryt ut varje bokstav
+skapa array för rätt result
 
 
-    om word.includes(guess[x]) = true,
-        => guess[x] === guess[word.indexOf(guess[x])] om true => incorrect
-    annars => skriv ut misplaced
+kontrollera bokstäverna mot varandra, markera "-correct" / "-incorrect"
+om korrekt, ta bort bokstav(index) från "svar"
 
 
-
-    annars =>  skriv ut incorrect
-
-ittirera loopen per gissning.
-
-spara svaren i en array: anwser med guess[x] - correct/misplaced/incorrect
-skriv ut svaren och låt spelaren gissa igen.
+Kontrollera "misplaced" bokstäver
+sök efter "incorrect" och kontrollera om dom finns i "svar" men på annan plats.
+därefter ta bort bokstaven från "svar"
