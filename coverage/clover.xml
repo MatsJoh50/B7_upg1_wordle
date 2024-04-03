@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1712145163105" clover="3.2.0">
+  <project timestamp="1712145163105" name="All files">
+    <metrics statements="17" coveredstatements="17" conditionals="8" coveredconditionals="8" methods="3" coveredmethods="3" elements="28" coveredelements="28" complexity="0" loc="17" ncloc="17" packages="1" files="1" classes="1"/>
+    <file name="wordle.js" path="G:\Koda\b7_upg1_wordle\wordle.js">
+      <metrics statements="17" coveredstatements="17" conditionals="8" coveredconditionals="8" methods="3" coveredmethods="3"/>
+      <line num="2" count="5" type="stmt"/>
+      <line num="3" count="5" type="stmt"/>
+      <line num="4" count="5" type="stmt"/>
+      <line num="6" count="5" type="stmt"/>
+      <line num="7" count="23" type="cond" truecount="2" falsecount="0"/>
+      <line num="8" count="9" type="stmt"/>
+      <line num="9" count="9" type="stmt"/>
+      <line num="11" count="14" type="stmt"/>
+      <line num="16" count="5" type="stmt"/>
+      <line num="17" count="23" type="cond" truecount="4" falsecount="0"/>
+      <line num="19" count="5" type="stmt"/>
+      <line num="20" count="5" type="stmt"/>
+      <line num="23" count="23" type="stmt"/>
+      <line num="24" count="5" type="stmt"/>
+      <line num="27" count="1" type="stmt"/>
+      <line num="28" count="1" type="stmt"/>
+      <line num="35" count="24" type="cond" truecount="2" falsecount="0"/>
+    </file>
+  </project>
+</coverage>
