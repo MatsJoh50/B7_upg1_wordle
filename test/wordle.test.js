@@ -23,7 +23,7 @@ const result = wordle('cow', 'wow');
 });
 
 
-//Därefter lägger vi till 'misplaced'
+//Därefter lägger vi till enstaka 'misplaced'
 test('More advanced to see if "a" and "l" get Correct status: Word: cykla, Guess: hallå', () => {
 
     const result = wordle('cykla', 'hallå');

@@ -15,7 +15,6 @@ function wordle(word, guess){
 
     for(let i = 0; i < rightWord.length; i++){
         if(correct[i].result.includes('Incorrect') && rightWord.includes(guessingWord[i])){
-            // correct[i] = { letter: correct[i].letter, result: 'Misplaced' }
             correct[i].result = 'Misplaced'
             rightWord[rightWord.indexOf(guessingWord[i])] = null;
         }
